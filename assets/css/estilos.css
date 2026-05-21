@@ -1,0 +1,46 @@
+/* 1. Reset y ajustes generales */
+body {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+/* 2. Uniformidad de las Imágenes (El cambio más importante) */
+.card-img-top {
+    height: 220px;     /* Todas las fotos tendrán el mismo alto */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin estirarse */
+    border-bottom: 1px solid #eee;
+}
+
+/* 3. Estilo de las Tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;      /* Quita el borde gris aburrido de Bootstrap */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levante al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* 4. Tipografía y Colores */
+h1 {
+    color: #212529;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-primary {
+    color: #e67e22 !important; /* Un naranja "rostizado" en lugar del azul de Bootstrap */
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #225ae6;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #d35400; /* Color más oscuro al pasar el mouse */
+}
