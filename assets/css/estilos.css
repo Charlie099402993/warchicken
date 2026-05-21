@@ -64,8 +64,9 @@ h1::after {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);  /* Centra la línea */
-    width: 80px;                  /* Largo de la línea */
+    width: 70px;                  /* Largo de la línea */
     height: 4px;                  /* Grosor de la línea */
     background-color: #0d6efd;    /* El color azul de tu tema (o usa #e67e22 si quieres naranja) */
     border-radius: 2px;           /* Puntas redondeadas */
+
 }
