@@ -31,7 +31,7 @@ h1 {
 }
 
 .text-primary {
-    color: #e67e22 !important; /* Un naranja "rostizado" en lugar del azul de Bootstrap */
+    color: #22e677 !important; /* Un naranja "rostizado" en lugar del azul de Bootstrap */
     font-weight: bold;
 }
 
@@ -43,4 +43,29 @@ h1 {
 
 .btn-primary:hover {
     background-color: #d35400; /* Color más oscuro al pasar el mouse */
+}
+/* Estilo para los títulos de sección (h1) */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía limpia */
+    font-weight: 800;             /* Muy negrita para que destaque */
+    text-transform: uppercase;    /* Todo en mayúsculas para impacto visual */
+    letter-spacing: 2px;          /* Espacio entre letras para elegancia */
+    color: #212529;               /* Color casi negro */
+    position: relative;           /* Necesario para la línea decorativa */
+    padding-bottom: 15px;         /* Espacio para la línea */
+    margin-top: 60px;             /* Reemplaza los <br> con este margen */
+    text-align: center;           /* Centrado moderno */
+}
+
+/* Línea decorativa debajo del texto */
+h1::after {
+    content: '';                  /* Crea un elemento vacío */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);  /* Centra la línea */
+    width: 80px;                  /* Largo de la línea */
+    height: 4px;                  /* Grosor de la línea */
+    background-color: #0d6efd;    /* El color azul de tu tema (o usa #e67e22 si quieres naranja) */
+    border-radius: 2px;           /* Puntas redondeadas */
 }
