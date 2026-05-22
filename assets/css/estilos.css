@@ -1,0 +1,72 @@
+/* 1. Reset y ajustes generales */
+body {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+/* 2. Uniformidad de las Imágenes (El cambio más importante) */
+.card-img-top {
+    height: 220px;     /* Todas las fotos tendrán el mismo alto */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin estirarse */
+    border-bottom: 1px solid #eee;
+}
+
+/* 3. Estilo de las Tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;      /* Quita el borde gris aburrido de Bootstrap */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levante al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* 4. Tipografía y Colores */
+h1 {
+    color: #212529;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-primary {
+    color: #22e677 !important; /* Un naranja "rostizado" en lugar del azul de Bootstrap */
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #225ae6;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #d35400; /* Color más oscuro al pasar el mouse */
+}
+/* Estilo para los títulos de sección (h1) */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía limpia */
+    font-weight: 800;             /* Muy negrita para que destaque */
+    text-transform: uppercase;    /* Todo en mayúsculas para impacto visual */
+    letter-spacing: 2px;          /* Espacio entre letras para elegancia */
+    color: #212529;               /* Color casi negro */
+    position: relative;           /* Necesario para la línea decorativa */
+    padding-bottom: 15px;         /* Espacio para la línea */
+    margin-top: 60px;             /* Reemplaza los <br> con este margen */
+    text-align: center;           /* Centrado moderno */
+}
+
+/* Línea decorativa debajo del texto */
+h1::after {
+    content: '';                  /* Crea un elemento vacío */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);  /* Centra la línea */
+    width: 70px;                  /* Largo de la línea */
+    height: 4px;                  /* Grosor de la línea */
+    background-color: #0d6efd;    /* El color azul de tu tema (o usa #e67e22 si quieres naranja) */
+    border-radius: 2px;           /* Puntas redondeadas */
+
+}
